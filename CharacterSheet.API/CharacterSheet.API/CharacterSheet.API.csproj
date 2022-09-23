@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+ <ItemGroup>
+        <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="6.0.5" />
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="6.0.5" />
+        <PackageReference Include="NSwag.AspNetCore" Version="13.16.0" />
+        <PackageReference Include="NSwag.MSBuild" Version="13.16.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+ <ItemGroup>
+   <ProjectReference Include="..\CharacterSheet.Application\CharacterSheet.Application.csproj" />
+   <ProjectReference Include="..\CharacterSheet.Infrastructure\CharacterSheet.Infrastructure.csproj" />
+ </ItemGroup>
+ <ItemGroup>
+ 	<InternalsVisibleTo Include="CharacterSheet.Application.IntegrationTests" />
+ </ItemGroup>
+</Project>
