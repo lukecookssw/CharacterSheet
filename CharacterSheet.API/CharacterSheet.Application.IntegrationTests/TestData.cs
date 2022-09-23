@@ -14,7 +14,5 @@ public static class TestData
     {
         context.Characters.Add(new Character { Id = 1, Name = "Integration Testy", Race = new Race { Name = "Human" } });
         context.SaveChanges();
-
-        var v = context.Characters.ToList();
     }
 }
