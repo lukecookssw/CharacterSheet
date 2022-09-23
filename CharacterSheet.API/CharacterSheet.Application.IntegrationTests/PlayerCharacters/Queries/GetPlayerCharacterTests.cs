@@ -10,7 +10,7 @@ public class GetPlayerCharacterTests
 {
     // GetPlayerCharacter should throw ValidationException when id is not found
     [Test]
-    public async Task ShouldReturnBadRequest_CharacterNotFound()
+    public async Task ShouldReturn404_CharacterNotFound()
     {
         // Arrange
         GetCharacter request = new GetCharacter(-1);
